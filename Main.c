@@ -31,7 +31,7 @@ int main(void){
             scanf("%d", &p); //coluna
             scanf("%d", &pos); //linha
             z = true;
-                if(p > 3 || pos > 3 /*|| m[p][pos] == 'X' || m[p][pos] == 'O'*/){
+                if(p > 3 || pos > 3 || m[p][pos] == 'X' || m[p][pos] == 'O'){
                     printf("Posição inválida. Jogue novamente.\n");
                     z = false;
                 }
